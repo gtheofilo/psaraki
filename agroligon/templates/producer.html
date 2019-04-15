@@ -18,16 +18,19 @@
                     </div>
                 </div>
             </li>
-            <div class="alert alert-primary d-flex align-items-baseline m-0 mt-5" role="alert">
-                <div>
-                    <i class="fas fa-fish mr-2"></i>O Γιώργος Θεοφιλόπουλος θέλει <strong>10kg Σφυρίδα</strong> και
-                    <strong>5kg Πεσκανδρίτσα</strong> στην Αθήνα.
+            <div class="alerts-container">
+                <div class="alert alert-primary d-flex align-items-baseline m-0 mt-5" role="alert">
+                    <div>
+                        <i class="fas fa-fish mr-2"></i>O Γιώργος Θεοφιλόπουλος θέλει <strong>10kg Σφυρίδα</strong> και
+                        <strong>5kg Πεσκανδρίτσα</strong> στην Αθήνα.
+                    </div>
+                    <a href="#" class="btn btn-success ml-auto">
+                        <i class="fas fa-check mr-2"></i>Αποδοχή παραγγελίας
+                    </a>
                 </div>
-                <a href="#" class="btn btn-success ml-auto">
-                    <i class="fas fa-check mr-2"></i>Αποδοχή παραγγελίας
-                </a>
             </div>
         </div>
+
 
         <div class="jumbotron pt-5 pb-5">
             <h5><i class="fas fa-fish mr-2"></i>Τι ψάρια πιάσατε σήμερα;</h5>
@@ -112,6 +115,7 @@
 {% endblock %}
 
 {% block scripts %}
+    <script src="{{ url_for('static', filename='js/producer_popup.js') }}"></script>
     <script>
         new Chart(document.getElementById("line-chart"), {
             type: 'line',
