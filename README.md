@@ -4,3 +4,4 @@
 
 The application that we developed with Thanos Paravantis(@thanosparavantis) in three days during the crowdhackathon #Agrifood contest.
 
+![alt_text](https://raw.githubusercontent.com/gtheofilo/psaraki/master/screenshots/image1.png)
